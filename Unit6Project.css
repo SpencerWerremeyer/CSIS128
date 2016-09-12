@@ -1,0 +1,36 @@
+#idfloatleft{
+	float: left;
+	background-color: #f5f5dc;
+	font-family: Verdana, sans-serif;
+	font-size: large;
+	padding: 20px;
+}
+
+.classheadlinedot{
+    text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-color: blue;
+	text-decoration: overline;
+	text-decoration-color: red;
+}
+
+#idabsoluetegray{
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	background-color: #D3D3D3;
+	border-style: solid;
+}
+
+.classrelativegreen{
+	position: relative;
+	left: 15px;
+	background-color: #90EE90;
+}
+
+#idfixedgrey{
+	position: fixed;
+	background-color: #D3D3D3;
+	font-weight: bold;
+	padding: 10px;
+}
