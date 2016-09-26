@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+function validateForm(){
+	var x = document.forms["form"]["name"].value;
+	var y = document.forms["form"]["email"].value;
+	if (x == null || x == ""){
+		alert("Please enter a name");
+		return false;
+	}
+	if (y == null || y == ""){
+		alert("Please enter an email address")
+		return false;
+	}
+}
+</script>
+<form name="form" action="http://www.markmurtha.com/csis128/readform.asp" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="name">
+  <br>
+  E-Mail Address: <input type="text" name="email">
+  <br>
+  <input type="submit" value="sign up now"> 
+</form>
+</body>
+</html>
