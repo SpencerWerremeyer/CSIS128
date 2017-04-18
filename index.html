@@ -34,8 +34,8 @@
                       return xmlhttp.responseText;
                   }
               }
-              xmlhttps.open("GET", theUrl, false );
-              xmlhttps.send();
+              xmlhttp.open("GET", theUrl, false );
+              xmlhttp.send();
           }
           console.log("test");
           console.log(httpGet("http://www.baseball-reference.com/"))
