@@ -1,0 +1,46 @@
+<DOCTYPE !html>
+  <html>
+  <head>
+    <title>JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div id="content">
+      <div id="nav">
+        <a href="index.html">Home</a> |
+        <a href="c++.html">C++</a> |
+        <a href="JavaScript.html">JavaScript</a> |
+        <a href="PHP.html">PHP</a> |
+        <a href="SQL.html">SQL</a>
+      </div>
+      <div id="about">
+          read and display baseball stats
+          <script>
+          function httpGet(theUrl)
+          {
+              if (window.XMLHttpRequest)
+              {// code for IE7+, Firefox, Chrome, Opera, Safari
+                  xmlhttp=new XMLHttpRequest();
+              }
+              else
+              {// code for IE6, IE5
+                  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+              }
+              xmlhttp.onreadystatechange=function()
+              {
+                  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                  {
+                      return xmlhttp.responseText;
+                  }
+              }
+              xmlhttp.open("GET", theUrl, false );
+              xmlhttp.send();
+          }
+          console.log("test");
+          </script>
+      </div>
+
+    </div>
+  </body>
+</html>
