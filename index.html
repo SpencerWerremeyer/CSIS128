@@ -21,21 +21,21 @@
           {
               if (window.XMLHttpRequest)
               {// code for IE7+, Firefox, Chrome, Opera, Safari
-                  xmlhttp=new XMLHttpRequest();
+                  xmlhttp=new XMLHttpsRequest();
               }
               else
               {// code for IE6, IE5
-                  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                  xmlhttps=new ActiveXObject("Microsoft.XMLHTTP");
               }
-              xmlhttp.onreadystatechange=function()
+              xmlhttps.onreadystatechange=function()
               {
-                  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                  if (xmlhttps.readyState==4 && xmlhttps.status==200)
                   {
-                      return xmlhttp.responseText;
+                      return xmlhttps.responseText;
                   }
               }
-              xmlhttp.open("GET", theUrl, false );
-              xmlhttp.send();
+              xmlhttps.open("GET", theUrl, false );
+              xmlhttps.send();
           }
           console.log("test");
           console.log(httpGet("http://www.baseball-reference.com/"))
