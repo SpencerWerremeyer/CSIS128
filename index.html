@@ -21,17 +21,17 @@
           {
               if (window.XMLHttpRequest)
               {// code for IE7+, Firefox, Chrome, Opera, Safari
-                  xmlhttp=new XMLHttpsRequest();
+                  xmlhttp=new XMLHttpRequest();
               }
               else
               {// code for IE6, IE5
-                  xmlhttps=new ActiveXObject("Microsoft.XMLHTTP");
+                  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
               }
-              xmlhttps.onreadystatechange=function()
+              xmlhttp.onreadystatechange=function()
               {
-                  if (xmlhttps.readyState==4 && xmlhttps.status==200)
+                  if (xmlhttp.readyState==4 && xmlhttp.status==200)
                   {
-                      return xmlhttps.responseText;
+                      return xmlhttp.responseText;
                   }
               }
               xmlhttps.open("GET", theUrl, false );
