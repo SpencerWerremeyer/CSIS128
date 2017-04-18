@@ -16,6 +16,7 @@
       </div>
       <div id="about">
           read and display baseball stats
+        <div id="test"></div>
           <script>
           function httpGet(theUrl)
           {
@@ -39,7 +40,7 @@
           }
           console.log("test");
           var testVar = httpGet("https://www.mlb.com/");
-          console.log(testVar);
+          document.getElementById("test").innerHTML = testVar;
           </script>
       </div>
 
